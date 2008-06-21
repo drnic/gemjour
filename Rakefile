@@ -40,7 +40,7 @@ namespace :gem do
 end
 
 task :install => :package do
-  sh %{sudo gem install pkg/gemjour-#{Gemjour::VERSION}}
+  sh %{sudo gem install --local pkg/gemjour-#{Gemjour::VERSION}}
 end
 
 desc "Remove all generated artifacts"
